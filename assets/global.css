@@ -1,0 +1,328 @@
+/*
+ * Copyright (C) 2018 Matus Zamborsky
+ * This file is part of The Ontology Wallet&ID.
+ *
+ * The The Ontology Wallet&ID is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * The Ontology Wallet&ID is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with The Ontology Wallet&ID.  If not, see <http://www.gnu.org/licenses/>.
+ */
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700');
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+
+  color: #595757;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.ui.segment, 
+.ui.segments, 
+.ui.table, 
+.ui.button, 
+.ui.form input,
+.ui input,
+.ui.form textarea, 
+.ui.menu, 
+.ui.tabular.menu .active.item,
+.ui.dropdown,
+.ui.dropdown .menu,
+.ui.message { 
+  border-radius: 0 !important; 
+  -moz-border-radius: 0 !important; 
+  -webkit-border-radius: 0 !important; 
+}
+
+.ui.button {
+  color: #32a4be;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ui.message .header, .ui.message .content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 200;
+}
+
+.ui.message .header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+}
+
+.ui.dropdown {
+  color: #32a4be;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.ui.list .list>.item .header, .ui.list>.item .header {
+  color: #32a4be;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+}
+
+
+.ui.button.basic, .ui.button.basic:hover, .ui.button.basic:focus {
+  box-shadow: 0 0 0 0 white inset;
+}
+
+#root {
+  display: flex;
+  flex-grow: 1;
+  align-self: stretch;
+  background-color: #f4f4f4;
+}
+
+div.flex {
+  display: flex;
+  flex-direction: row;
+  min-height: 0;
+}
+
+div.flex.column {
+  flex-direction: column;
+}
+
+div.flex.full {
+  flex-grow: 1;
+  align-self: stretch;
+}
+
+div.flex.part {
+  height: 120px;
+  flex-shrink: 0;
+}
+
+div.flex.partSmall {
+  height: 60px;
+  flex-shrink: 0;
+}
+
+div.flex.spread {
+  justify-content: space-between;
+}
+
+div.flex.spread-around {
+  justify-content: space-around;
+}
+
+div.flex.filler {
+  flex-grow: 1;
+}
+
+div.flex.spacer {
+  height: 10px;
+}
+
+div.flex.center {
+  align-self: center;
+}
+
+div.flex.error {
+  color: #912d2b;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.gradient {
+  background-color: #32b4d2;
+  color: white;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 200 !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.subtitle {
+  font-weight: 200 !important;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  align-self: center;
+}
+
+div.flex.content {
+  margin: 10px;
+}
+
+.logo img, .logo .img {
+  align-self: center;
+  margin-top: 20px;
+}
+
+.flex.logoHeader {
+  align-items: flex-start;
+  flex-shrink: 0;
+  margin: 10px;
+}
+
+.logoHeader .buttons, .logo .buttons {
+  justify-content: flex-end;
+}
+
+.logo .buttons {
+  align-self: flex-start;
+  align-items: flex-start;
+  margin: 10px !important;
+}
+
+.logo .button.hidden {
+  visibility: hidden;
+}
+
+.logo .button,
+.logoHeader .buttons .button {
+  margin: 0;
+  padding: 5px !important;
+}
+
+.logo .button .icon,
+.logoHeader .buttons .button .icon {
+  color: white;
+}
+
+.logo .ui.button:hover, 
+.logo .ui.button:focus, 
+.logo .ui.button:active, 
+.logoHeader .buttons .button:hover, 
+.logoHeader .buttons .button:focus, 
+.logoHeader .buttons .button:active {
+  background-color: transparent !important;
+}
+
+.logo .ui.button:hover .icon, 
+.logo .ui.button:focus .icon, 
+.logo .ui.button:active .icon, 
+.logoHeader .buttons .button:hover .icon, 
+.logoHeader .buttons .button:focus .icon, 
+.logoHeader .buttons .button:active .icon {
+  color: #e0e1e2 !important;
+}
+
+
+.logoHeader h1 {
+  margin-left: 10px;
+  line-height: 1;
+}
+
+h1.header {
+  margin-top: 10px;
+  align-self: center;
+  font-size: 2.5rem;
+}
+
+.buttons {
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.hint {
+  margin-top: 15px;
+  align-items: center;
+}
+
+.sendForm, .loginForm, .signupForm {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-self: stretch;
+} 
+
+.mnemonics, .privateKey {
+  height: 200px;
+  align-items: flex-start;
+}
+
+.qrCode {
+  align-self: center;
+}
+
+.buttons.margin {
+  margin-top: 20px;
+}
+
+.breakWords {
+  word-break:break-all;
+}
+
+.clearAccount {
+  margin-top: 10px;
+}
+
+.clickable {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.flex.scrollView {
+  overflow-y: auto;
+  flex-direction: column;
+}
+
+.flex.scrollView .flex.content {
+  flex-shrink: 0;
+  flex-direction: column;
+}
+
+.transferList {
+  width: 100%;
+}
+
+div.flex.content.balance-wrapper {
+  margin-top: 0px;
+}
+
+.flex.balance {
+  align-items: center;
+  flex-basis: 50%;
+}
+
+.flex.balance label {
+  align-self: center;
+}
+
+h4.unbound {
+  color: #e0e1e2;
+  cursor: pointer;
+}
+
+h4.unbound:hover {
+  color: white;
+}
+
+.ledgerText {
+  margin-bottom: 5px;
+}
+
+.ui.message.scroll {
+  overflow-y: scroll;
+}
+
+.statusBar {
+  padding: 5px;
+  flex-shrink: 0;
+}
+
+.flex.optionsButtons {
+  flex-direction: column;
+}
